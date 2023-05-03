@@ -69,4 +69,4 @@ cleanup
 create_virtual_environment
 clone_repos
 install_deps
-download_and_unzipmodel
+#download_and_unzipmodel

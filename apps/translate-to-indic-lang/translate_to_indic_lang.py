@@ -17,7 +17,7 @@ class TranslateToIndicLang:
         self.model = None
         self.helperFuncs = Helpers()
         self.SRC_LANG = "en"
-        self.cfg = self.helperFuncs.read_configfile(".config.ini")
+        self.cfg = self.helperFuncs.read_configfile("/content/OdiaGenAI/apps/translate-to-indic-lang/config.ini.sample")
         self.__set_variables()
 
     def __check_supported_file_ext(self) -> None:
@@ -38,7 +38,7 @@ class TranslateToIndicLang:
         self.TARGET_URL = self.cfg["APP"].get("TARGET_URL")
         self.TARGET_LANG = self.cfg["APP"].get("TARGET_LANG")
         self.MAX_PARALLEL_REQUESTS = self.cfg["APP"].get("MAX_PARALLEL_REQUESTS")
-        self.WORK_DIR = os.getcwd() + "/" + ".work_dir"
+        self.WORK_DIR = os.getcwd() + "/" + "work_dir"
         self.OUTPUT_FOLDERNAME = "output"
         self.__check_supported_file_ext()
         self.MERGED_OUTPUT_FILENAME = "output.json"
@@ -53,7 +53,7 @@ class TranslateToIndicLang:
 
     def __initiate_model(self) -> None:
         """Instantiate Model"""
-        self.model = Model(expdir="../en-indic")
+        self.model = Model(expdir="/content/OdiaGenAI/apps/translate-to-indic-lang/en-indic")
 
     def __cleanup(self) -> None:
         """Cleanup work environment"""
