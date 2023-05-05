@@ -17,7 +17,7 @@ class TranslateToIndicLang:
         self.model = None
         self.helperFuncs = Helpers()
         self.SRC_LANG = "en"
-        self.cfg = self.helperFuncs.read_configfile("/content/OdiaGenAI/apps/translate-to-indic-lang/config.ini.sample")
+        self.cfg = self.helperFuncs.read_configfile("/content/Bengali_LLM/apps/translate-to-indic-lang/config.ini.sample")
         self.__set_variables()
 
     def __check_supported_file_ext(self) -> None:
@@ -53,7 +53,7 @@ class TranslateToIndicLang:
 
     def __initiate_model(self) -> None:
         """Instantiate Model"""
-        self.model = Model(expdir="/content/OdiaGenAI/apps/translate-to-indic-lang/en-indic")
+        self.model = Model(expdir="/content/Bengali_LLM/apps/translate-to-indic-lang/en-indic")
 
     def __cleanup(self) -> None:
         """Cleanup work environment"""
