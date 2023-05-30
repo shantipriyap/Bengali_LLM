@@ -15,6 +15,6 @@ Source: https://github.com/PhoebusSi/Alpaca-CoT/tree/main/data/formatted_cot_dat
 | codegen-instruct.json merged output  |<p align = "right"> 4535</p>| [link](https://github.com/teknium1/GPTeacher/tree/main/Codegen)|
 | roleplay-instruct-v2-final.json output. json merged  |<p align = "right"> 7188</p>| [link](https://github.com/teknium1/GPTeacher/tree/main/Roleplay%20Supplemental)|
 | roleplay-simple-deduped-roleplay-instruct  |<p align = "right"> 1923</p>| [link](https://github.com/teknium1/GPTeacher/blob/main/Roleplay/roleplay-simple-deduped-roleplay-instruct.json)|
-|output.json|<p align = "right"> 18194</p>| link yet to be added|
+|output_gpt-1.zip|<p align = "right"> 18194</p>| link yet to be added|
 
 
